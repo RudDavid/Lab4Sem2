@@ -19,7 +19,7 @@ namespace standardInputAndOutput {
       string newContent;
       Console.Write("Enter new content: ");
       newContent = Console.ReadLine();
-      text.contentOfTextFile = newContent;
+      text.ContentOfTextFile = newContent;
       Console.WriteLine("Content is updated");
 
     }
@@ -56,7 +56,8 @@ namespace standardInputAndOutput {
       while (isRun) {
 
         Console.Write(menu);
-        string userButton = Console.ReadLine();
+        string userButton;
+        userButton = Console.ReadLine();
 
         while (userButton.Length < firstBorder || userButton.Length > lastBorder) {
           Console.WriteLine("Please enter correct number of operation");
@@ -98,9 +99,6 @@ namespace standardInputAndOutput {
           case "5":
             myFile.Print();
             break;
-
-
-
         }
       }
     }

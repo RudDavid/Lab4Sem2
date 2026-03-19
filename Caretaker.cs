@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace standardInputAndOutput {
   public class Caretaker {
-    private object memento;
+    private object _memento;
     public void SaveState(IOriginator originator) {
-      memento = originator.GetMemento();
+      _memento = originator.GetMemento();
     }
 
     public void RestoreState(IOriginator originator) {
-      originator.SetMemento(memento);
+      originator.SetMemento(_memento);
     }
   }
 }

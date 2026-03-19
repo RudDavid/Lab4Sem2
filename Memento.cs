@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace standardInputAndOutput {
   class Memento {
-    public string nameTextFile { get; set; }
-    public string contentOfTextFile { get; set; }
+    public string NameTextFile { get; set; }
+    public string ContentOfTextFile { get; set; }
   }
   public interface IOriginator {
     object GetMemento();
